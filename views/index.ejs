@@ -1,0 +1,29 @@
+<%include partials/header%>
+
+<div class="container">
+  <header class="jumbotron">
+    <div class="container">
+        <h2>Welcome Agent 001. here are our active agents</h2>
+        <p class="text-center">Here, you can also add new agents</p>
+        <a href="#" class="btn btn-lg btn-success text-center">Recruit Agent</a>
+    </div>
+  </header>
+  <div class="row" style="display:flex; flex-wrap:wrap;">
+    <%agents.forEach(function(agent){%>
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail">
+        <a href="/takeovers/<%=agent._id%>"><img src="<%=agent.image%>" alt="" class="img-responsive"></a>
+        <div class="caption">
+          <p>Agent Alias: <%=agent.name%></p>
+        </div>
+      </div>
+    </div>
+    <%});%>
+  </div>
+</div>
+
+
+
+
+
+<%include partials/footer%>

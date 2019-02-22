@@ -1,0 +1,15 @@
+h2{
+  font-family: Montserrat;
+  font-weight: 900;
+  text-align: center;
+}
+p{
+  font-family: Raleway;
+  font-weight: 500;
+}
+.thumbnail img{
+  width: 100%;
+}
+.thumbnail{
+  padding: 0;
+}
